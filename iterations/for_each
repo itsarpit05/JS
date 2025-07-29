@@ -1,0 +1,50 @@
+const code = ["java","py" ,"c++" , "ruby"]
+
+/*************STEPS TO DECLARE for_each******************* */
+
+// 1. code.forEach()
+// 2. Inside forEach parantheses declare a function like function codes(){
+
+// }
+// 3. As it is a callback function remove codes 
+// 4. whatever you want you name your value for access from array name it like I did val
+
+code.forEach(function(val){
+    console.log(val);                          
+    
+})
+
+
+/**************for arrow functions***************** */
+
+code.forEach( (item) => {
+    console.log(item);
+} )
+
+function printMe(item){
+    console.log(item);
+}
+
+code.forEach(printMe) // passed as a reference
+
+
+const myCoding = [
+    {
+        language: "java",
+      filename:"java" 
+    },
+    {
+        language:"python",
+        filename:"py"
+    },
+    {
+        language:"c++",
+        filename:"cpp"
+    }
+
+]
+
+myCoding.forEach((val)=>{
+  console.log(val.filename);
+  
+})
